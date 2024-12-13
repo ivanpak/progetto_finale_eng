@@ -63,6 +63,8 @@ Dopo aver inserito alcuni oggetti di tipo utente all’interno del database abbi
 ### CONTROLLER - SERVICE - REPOSITORY 🗂
 
 Nel Controller abbiamo settato come API principale mediante l’annotation @GetMapping la nostra home_page.
+metodi findAll();
+
 
 ```jsx
 //Annotation che ci mappa il main facendoci visualizzare la lista degli utenti
@@ -70,6 +72,9 @@ Nel Controller abbiamo settato come API principale mediante l’annotation @GetM
 //Annotation che ci mappa il main facendoci visualizzare la lista dei libri
 @RequestMapping('api/v1/libri')
 ```
+> *By GiovanniF*
+> 
+
 
 Creiamo e gestiamo una sessione di login per poter gestire poi il modo in cui vengono noleggiati i libri — noleggia() — 
 
