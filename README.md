@@ -81,7 +81,7 @@ Mediante le opzioni di CRUD riusciamo a gestire tutte le operazioni di inserimen
 
 Nel Model creiamo le due entità del libro e dell’utente con i parametri definiti precedentemente dall’UML e successivamente con i valori pre-impostati all’interno del nostro database.
 
-> By IvanP & AlessandroS
+> *By IvanP & AlessandroS*
 > 
 
 > *Documentation By AndreaL*
