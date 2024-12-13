@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/libri")
+@CrossOrigin
 public class LibroController {
 
     @Autowired
