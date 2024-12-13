@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5775fdb-92d1-4a99-8c88-7040f70b46a7" name="Changes" comment="added all">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/LibroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/LibroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/UtenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/UtenteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/model/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/model/Utente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/LibroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/LibroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/UtenteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/UtenteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/progetto_finale_eng/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/progetto_finale_eng/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/repository/UtenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/repository/UtenteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ProgettoFinaleEngApplication.executor": "Run",
-    "Maven.progetto_finale_eng [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ipiacere/Desktop/repos/progetto_finale_eng/progetto_finale_eng",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ProgettoFinaleEngApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.progetto_finale_eng [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;login-feature&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ipiacere/Desktop/repos/progetto_finale_eng/progetto_finale_eng&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
