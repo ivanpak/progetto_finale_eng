@@ -11,7 +11,6 @@ public interface LibroService {
 
     public Libro save(Libro l);
 
-    public Libro update(Integer id, Libro l);
 
     public void delete(Integer id);
 }

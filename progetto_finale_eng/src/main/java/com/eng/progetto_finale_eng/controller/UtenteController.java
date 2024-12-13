@@ -1,6 +1,7 @@
 package com.eng.progetto_finale_eng.controller;
 
 import com.eng.progetto_finale_eng.model.Utente;
+import com.eng.progetto_finale_eng.service.UtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class UtenteController {
     }
 
     @GetMapping("/id")
-    public Utente findById(@RequestParam String id){
+    public Utente findById(@RequestParam Integer id){
         return utenteService.findById(id);
     }
 
@@ -28,7 +29,7 @@ public class UtenteController {
         return utenteService.save( utente );
     }
     @DeleteMapping("/id")
-    public void delete(@RequestParam String id){
+    public void delete(@RequestParam Integer id){
         utenteService.delete(id);
     }
 }

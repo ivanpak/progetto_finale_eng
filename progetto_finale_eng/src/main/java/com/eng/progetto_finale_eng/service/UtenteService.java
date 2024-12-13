@@ -15,7 +15,5 @@ public interface UtenteService {
 
     public Utente save(Utente u);
 
-    public Utente update(Integer id, Utente u);
-
     public void delete(Integer id);
 }

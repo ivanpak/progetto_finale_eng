@@ -25,13 +25,6 @@ public class UtenteServiceImpl {
         return utenteRepository.save(u);
     }
 
-    public Utente update(Integer id, Utente u) {
-        Utente oldUtente = utenteRepository.findById(id).get();
-        oldUtente.setEmail(u.getEmail());
-        oldUtente.setNome(u.getNome());
-        oldUtente.setPassword(u.getPassword());
-        return utenteRepository.save(oldUtente);
-    }
 
     public void delete(Integer id) {
         utenteRepository.deleteById(id);

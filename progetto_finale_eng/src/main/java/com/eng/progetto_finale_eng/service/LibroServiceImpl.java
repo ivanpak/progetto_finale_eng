@@ -25,13 +25,6 @@ public class LibroServiceImpl implements LibroService {
         return libroRepository.save(l);
     }
 
-    public Libro update(Integer id, Libro l) {
-        Libro oldLibro = libroRepository.findById(id).get();
-        oldLibro.setAutore(l.getAutore());
-        oldLibro.setNome(l.getNome());
-
-        return libroRepository.save(oldLibro);
-    }
 
     public void delete(Integer id) {
         libroRepository.deleteById(id);
