@@ -30,6 +30,7 @@ public class UtenteService {
         oldUtente.setEmail(u.getEmail());
         oldUtente.setNome(u.getNome());
         oldUtente.setPassword(u.getPassword());
+        return utenteRepository.save(oldUtente);
     }
 
     public void delete(Integer id) {
