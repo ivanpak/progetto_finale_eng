@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5775fdb-92d1-4a99-8c88-7040f70b46a7" name="Changes" comment="added all">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/progetto_finale_eng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/LibroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/LibroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/UtenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/UtenteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/model/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/model/Utente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/LibroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/LibroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/UtenteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/UtenteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/com/eng/progetto_finale_eng/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/java/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/progetto_finale_eng/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/progetto_finale_eng/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/target/classes/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/target/classes/dto/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto_finale_eng/target/classes/service/AuthService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -49,23 +54,13 @@
     "Maven.progetto_finale_eng [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "login-feature",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ipiacere/Desktop/repos/progetto_finale_eng/progetto_finale_eng",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
