@@ -1,5 +1,6 @@
 package com.eng.progetto_finale_eng.service;
 
+import com.eng.progetto_finale_eng.dto.LoginRequest;
 import com.eng.progetto_finale_eng.model.Utente;
 import com.eng.progetto_finale_eng.repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,4 +17,6 @@ public interface UtenteService {
     public Utente save(Utente u);
 
     public void delete(Integer id);
+
+    public Integer DTOToId(LoginRequest loginRequest);
 }

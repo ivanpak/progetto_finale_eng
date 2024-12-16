@@ -1,5 +1,6 @@
 package com.eng.progetto_finale_eng.service;
 
+import com.eng.progetto_finale_eng.dto.LoginRequest;
 import com.eng.progetto_finale_eng.model.Utente;
 import com.eng.progetto_finale_eng.repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,9 @@ public class UtenteServiceImpl implements UtenteService{
 
     public void delete(Integer id) {
         utenteRepository.deleteById(id);
+    }
+
+    public Integer DTOToId(LoginRequest loginRequest){
+        return utenteRepository.findByEmailAndPassword(loginRequest.getEmail(), loginRequest.getPassword()).getId();
     }
 }

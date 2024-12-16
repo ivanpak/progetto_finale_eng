@@ -1,5 +1,8 @@
 package com.eng.progetto_finale_eng.service;
 
+import com.eng.progetto_finale_eng.controller.AuthController;
+import com.eng.progetto_finale_eng.exception.LibroNonPossedutoException;
+import com.eng.progetto_finale_eng.exception.LibroNonTrovatoException;
 import com.eng.progetto_finale_eng.model.Utente;
 import com.eng.progetto_finale_eng.model.UtenteHasLibro;
 import com.eng.progetto_finale_eng.repository.UtenteHasLibroRepository;
@@ -17,6 +20,9 @@ public class UtenteHasLibroServiceImpl implements UtenteHasLibroService {
 
     @Autowired
     private UtenteHasLibroRepository utenteHasLibroRepository;
+
+    @Autowired
+    private UtenteService utenteService;
 
     @Autowired
     private UtenteRepository utenteRepository;
@@ -38,15 +44,24 @@ public class UtenteHasLibroServiceImpl implements UtenteHasLibroService {
 
     public void returnBook(Integer idLibro) {
         List<UtenteHasLibro> ownings = utenteHasLibroRepository.findByIdLibro(idLibro);
-        UtenteHasLibro currentOwning = ownings.stream().filter(o -> o.getData_di_fine() == null).findFirst().orElseThrow(RuntimeException::new);
+        UtenteHasLibro currentOwning = ownings.stream()
+                .filter(o -> o.getData_di_fine() == null)
+                .findFirst()
+                .orElseThrow(() -> new LibroNonTrovatoException("Nessun possesso attivo trovato per il libro con ID: " + idLibro));
+
+        if (!currentOwning.getIdUtente().equals(utenteService.DTOToId(AuthController.getSession()))) {
+            throw new LibroNonPossedutoException("Il libro non è posseduto dall'utente.");
+        }
+
         currentOwning.setData_di_fine(Date.from(Instant.now()));
         utenteHasLibroRepository.save(currentOwning);
     }
 
+
     public UtenteHasLibro setOwner(Integer idLibro, Integer idUtente) {
         List<UtenteHasLibro> ownings = utenteHasLibroRepository.findByIdLibro(idLibro);
         List<UtenteHasLibro> pendingOwnings = ownings.stream().filter(o -> o.getData_di_fine() == null).toList();
-        if(pendingOwnings.size()>0) {
+        if (pendingOwnings.size() > 0) {
             throw new RuntimeException();
         } else {
             return utenteHasLibroRepository.save(new UtenteHasLibro(idUtente, idLibro, Date.from(Instant.now()), null));
