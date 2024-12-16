@@ -84,5 +84,11 @@ Mediante le opzioni di CRUD riusciamo a gestire tutte le operazioni di inserimen
 
 Nel Model creiamo le due entità del libro e dell’utente con i parametri definiti precedentemente dall’UML e successivamente con i valori pre-impostati all’interno del nostro database.
 
+---
+### FRONT END
+> *By Bolt(AI) & GiovanniF*
+
+Abbiamo implementato con l'intelligenza artificale Bolt (bolt.new) un frontend parziale in React che permette di fare login, logout e prendere in prestito e restiuire libri.
+
+
 > *Documentation By AndreaL*
->
