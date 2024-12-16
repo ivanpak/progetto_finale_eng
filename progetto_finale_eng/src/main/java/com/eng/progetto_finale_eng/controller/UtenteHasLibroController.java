@@ -4,23 +4,25 @@ import com.eng.progetto_finale_eng.model.UtenteHasLibro;
 import com.eng.progetto_finale_eng.service.UtenteHasLibroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
-@RequestMapping("/api/v1/ownership")
+@RestController
+@RequestMapping("api/v1/ownership")
 public class UtenteHasLibroController {
 
     @Autowired
     private UtenteHasLibroService utenteHasLibroService;
 
+    @GetMapping
+    public List<UtenteHasLibro> findAll() {
+        return utenteHasLibroService.findAll();
+    }
+
     @GetMapping("/{idLibro}")
     public List<UtenteHasLibro> getOwnings(@PathVariable("idLibro") Integer idLibro) {
-        return utenteHasLibroService.getOwnings(idLibro);
+        return utenteHasLibroService.findByIdLibro(idLibro);
     }
 
     @PostMapping("/{idLibro}")

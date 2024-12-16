@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 
 import java.util.Date;
 
+// Entita che definisce la relazione tra utenti e libri
 @Entity
 public class UtenteHasLibro {
     @Id
@@ -16,6 +17,13 @@ public class UtenteHasLibro {
     Integer idLibro;
     Date data_di_inizio;
     Date data_di_fine;
+
+    public UtenteHasLibro() {
+        this.idUtente = 0;
+        this.idLibro = 0;
+        this.data_di_inizio = null;
+        this.data_di_fine = null;
+    }
 
     public UtenteHasLibro(Integer idUtente, Integer idLibro, Date data_di_inizio, Date data_di_fine) {
         this.idUtente = idUtente;

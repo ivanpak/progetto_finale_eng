@@ -8,7 +8,8 @@ import java.util.List;
 
 public interface UtenteHasLibroService {
 
-    public List<UtenteHasLibro> getOwnings(Integer idLibro);
+    public List<UtenteHasLibro> findAll();
+    public List<UtenteHasLibro> findByIdLibro(Integer idLibro);
 
     public void returnBook(Integer idLibro);
 

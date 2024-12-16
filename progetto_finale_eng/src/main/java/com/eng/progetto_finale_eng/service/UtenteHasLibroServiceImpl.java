@@ -21,7 +21,11 @@ public class UtenteHasLibroServiceImpl implements UtenteHasLibroService {
     @Autowired
     private UtenteRepository utenteRepository;
 
-    public List<UtenteHasLibro> getOwnings(Integer idLibro) {
+    public List<UtenteHasLibro> findAll() {
+        return utenteHasLibroRepository.findAll();
+    }
+
+    public List<UtenteHasLibro> findByIdLibro(Integer idLibro) {
         return utenteHasLibroRepository.findByIdLibro(idLibro);
     }
 
@@ -36,6 +40,7 @@ public class UtenteHasLibroServiceImpl implements UtenteHasLibroService {
         List<UtenteHasLibro> ownings = utenteHasLibroRepository.findByIdLibro(idLibro);
         UtenteHasLibro currentOwning = ownings.stream().filter(o -> o.getData_di_fine() == null).findFirst().orElseThrow(RuntimeException::new);
         currentOwning.setData_di_fine(Date.from(Instant.now()));
+        utenteHasLibroRepository.save(currentOwning);
     }
 
     public UtenteHasLibro setOwner(Integer idLibro, Integer idUtente) {
