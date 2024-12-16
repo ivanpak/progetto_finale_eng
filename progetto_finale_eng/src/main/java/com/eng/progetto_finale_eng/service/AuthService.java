@@ -16,15 +16,9 @@ public class AuthService {
 
     public boolean authenticate(String email, String password) {
 
-        System.out.println("SONO NEL SERVICE DI AUTH");
 
         Optional<Utente> utente = utenteRepository.findByEmail(email);
 
         return utente.isPresent() && utente.get().getPassword().equals(password);
-    }
-
-    public List<Utente> getUtenti() {
-
-        return utenteRepository.findAll();
     }
 }

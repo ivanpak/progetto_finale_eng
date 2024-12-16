@@ -2,6 +2,7 @@ package com.eng.progetto_finale_eng.controller;
 
 import com.eng.progetto_finale_eng.dto.LoginRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,32 +16,30 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
-   // @GetMapping
-   // public String getQualcosa(){
-    //    return "OOOOOOOOOOO";
-    //}
 
-    /*
-    @GetMapping
-    public List<Utente> elencoUtenti(){
+    private static LoginRequest sessionUser;
 
-        return authService.getUtenti();
-
-    }*/
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest) {
+    public String login(@RequestBody LoginRequest loginRequest) {
 
         boolean isAuthenticated = authService.authenticate(loginRequest.getEmail(), loginRequest.getPassword());
 
-        System.out.println("SONO NEL AUTH CONTROLLER");
-        System.out.println(loginRequest.getEmail());
-
-
         if (isAuthenticated) {
-            return ResponseEntity.ok("Login successful");
+            sessionUser=loginRequest;
+            return "Login successful";
         } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
+            return "Invalid credentials";
         }
     }
+    @GetMapping("/logout")
+    public String logout(){
+        sessionUser=null;
+        return "Logout successful";
+    }
+
+    public static LoginRequest getSession(){
+        return sessionUser;
+    }
+
 }
