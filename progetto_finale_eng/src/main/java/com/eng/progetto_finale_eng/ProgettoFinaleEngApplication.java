@@ -11,6 +11,3 @@ public class ProgettoFinaleEngApplication {
 	}
 
 }
-
-// nome varchar 50
-// mail unique notnull varchar 100
